@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+    </style>
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+</head>
+<body>
+<h1>Music Survey</h1>
+    
+<form action="/action_page.php">
+  Name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Email:<br>
+  <input type="email" name="Email" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+    
+<h2>Select Your Favorite Music Type</h2>
+
+<form>
+  <input type="checkbox" name="gender" value="Pop"> Pop<br>
+  <input type="checkbox" name="gender" value="Classical"> Classical<br>
+  <input type="checkbox" name="gender" value="Rock"> Rock<br>  
+  <input type="checkbox" name="gender" value="Folk"> Folk<br>  
+  <input type="checkbox" name="gender" value="Rap"> Rap<br> 
+    <input type="checkbox" name="gender" value="Other"> Other<br>  
+</form> 
+
+<h2>How often do you purchase CDs?</h2>
+
+<form>
+  <input type="radio" name="gender" value="Weekly"> Weekly<br>
+  <input type="radio" name="gender" value="A few per year"> A few per year<br>
+  <input type="radio" name="gender" value="monthly"> monthly<br>  
+  <input type="radio" name="gender" value="never"> never<br>
+ </form>
+<h2>Select the locations you listen to music:</h2>
+<form action="/action_page.php">
+  <select name="options" size="4">
+    <option value="At Home">At Home</option>
+    <option value="While Walking">While Walking</option>
+    <option value="In a Car">In a Car</option>
+    <option value="At Parties">At Parties</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>What role does music play in your life?</h2>
+
+<form action="/action_page.php">
+<textarea name="message" rows="3" cols="60">Enter text here.</textarea>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
