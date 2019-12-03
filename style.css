@@ -1,0 +1,29 @@
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+
+}
+.albums {
+  margin: 30px;
+  padding: 30px;
+  }
+.movies {
+  margin: 30px;
+  padding: 30px;
+  }
