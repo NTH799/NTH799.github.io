@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+background-color:cadetblue;
+}
+#content{
+width:90%;
+margin:auto;
+text-align:center;
+}
+
+form {
+font-size:1.5em;
+margin-left:5%;
+padding-top:5%;
+background-color: cornsilk;
+border:2px dotted #000;
+}
+input {
+margin-bottom:2%;
+font-size: 1em;
+}
+input#submit {
+border:4px solid yellow;
+border-radius: 50px 50px;
+text-align: center;
+background-color:chocolate;
+color:white;
+font-weight:bold;
+padding: 20px;
+}
+
+#submit:hover {
+background-color:cornsilk;
+color:chocolate;
+font-size:150%;
+border:2px solid black;
+}
+</style>
+<body>
+
+<div>
+<form action= "https://idesstage2.bc.edu/class/results.php" id="usrform">
+  First name:<br>
+  <input type="text" name="firstname" value="First">
+  <br>
+    Last name:<br>
+  <input type="text" name="lastname" value="Last">
+  <br>
+   Email:<br>
+  <input type="text" name="email" value="Email">
+  <br>
+  Favorite Ice cream: <br>
+    <input type="radio" name="flavor" value="choc"> Chocolate<br>
+  <input type="radio" name="flavor" value="vanil"> Vanilla<br>
+  <input type="radio" name="flavor" value="strwb"> Strawberry<br> 
+     <input type="radio" name="flavor" value="chocchip"> Chocolate Chip<br>
+  <input type="radio" name="flavor" value="banana"> Banana<br>
+  <input type="radio" name="flavor" value="oreo"> Oreo<br>  
+  <br>
+  <textarea rows="4" cols="50" name="comment" form="usrform">
+What do you want to do with your life?...</textarea><br>
+    My tolerance for writing html:
+<br>(0=lowest; 100=highest)<br>
+<input type="range" name="range" min="0" max="100" onchange="showValue(this.value)" value=this.valueAsNumber>
+<div id="range"> 0 </div>
+  <input type="submit">
+</form>
+</div>
+    <script>
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script>
+</body>
+</html>
